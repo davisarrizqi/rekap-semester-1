@@ -62,4 +62,53 @@ dataPenilaian = pandas.read_excel("Important Data/rekap_penilaian.xlsx")
 dataPenilaian["Full Name"] = dataPenilaian["First Name"] + " " + dataPenilaian["Last Name"]
 print(dataPenilaian)
 
+
+
 # 2. Menghitung Nilai Rata Rata UAS
+
+# declare it first
+jumlahData = len(dataPenilaian["UAS"])
+totalData = 0
+
+# make a for-loop logic so that we got the total of the numbers
+for number in dataPenilaian["UAS"]:
+    totalData += number
+
+# made it up
+meanUAS = totalData/jumlahData
+print("Rata-Rata:", meanUAS)
+
+# alternatif
+# dataPenilaian["UAS"].mean()
+
+
+
+# 3. Tambahkan nilai akhir [T1 20%, T2 20%, UTS 25%, UAS 35%]
+
+# declare it first
+nilaiAkhir = []; nilaiTugas = 0
+nilaiUTS = 0 ; nilaiUAS = 0
+
+# insert nilaiTugas
+for value in range(jumlahData):
+    nilaiTugas = (dataPenilaian["Tugas 1"][value]*20/100) + (dataPenilaian["Tugas 2"][value]*20/100)
+    nilaiUTS = (dataPenilaian["UTS"][value])*25/100; nilaiUAS = (dataPenilaian["UAS"][value])*35/100
+
+    # made it up (jumlahkan)
+    nilaiAkhir.append(nilaiTugas + nilaiUTS + nilaiUAS)
+
+dataPenilaian["Nilai Akhir"] = nilaiAkhir
+print(dataPenilaian)
+
+
+
+#  4. Menambahkan kolom Nilai Huruf
+
+# make a function that can choose what alpha that we used to be
+def nilaiHuruf(value):
+    # declare it first
+    charList = ['A', 'B', 'C', 'D']
+    numberList = [81, 61, 41, 21]
+
+    # make a simple dimple logic
+    
