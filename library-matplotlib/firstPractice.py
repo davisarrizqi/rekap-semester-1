@@ -33,6 +33,7 @@ def lecturerWay():
     ax.set_title("Index Prestasi Persemester")
     ax.set_ylabel("Semester")
     ax.set_xlabel("Nilai Index Prestasi")
+    
     plt.bar(semester, ip, color=warna)
 
 def nextTrial():
@@ -52,3 +53,45 @@ def pieWay():
     jumlahMahasiswa = [145, 438, 186]
 
     plt.pie(jumlahMahasiswa, labels=prodi, autopct="%i Mahasiswa")
+
+
+def joinTheGame():
+    # bar declaration
+    semester = [1, 2, 3, 4, 5, 6]
+    ip = [3.98, 3.56, 3.20, 3.01, 2.97, 3.75]
+    warna = ["#FF0000", "cyan", "blue", "magenta", "yellow", "#00FF00"]
+    plt.subplot(1, 2, 1)
+    plt.bar(semester, ip, color=warna)
+
+    # pie declaration
+    prodi = ["Sistem Informasi", "Informatika", "Psikologi"]
+    jumlahMahasiswa = [145, 438, 186]
+    plt.subplot(1, 2, 2)
+    plt.pie(jumlahMahasiswa, labels=prodi, autopct="%i Mahasiswa")
+
+def secondaryWay():
+    plt.subplot(1, 2, 1)
+    myWay()
+
+    plt.subplot(1, 2, 2)
+    pieWay()
+
+def lecturerJoinWay():
+    # bar declaration
+    semester = [1, 2, 3, 4, 5, 6]
+    ip = [3.98, 3.56, 3.20, 3.01, 2.97, 3.75]
+    warna = ["#FF0000", "cyan", "blue", "magenta", "yellow", "#00FF00"]
+
+    # pie declaration
+    prodi = ["Sistem Informasi", "Informatika", "Psikologi"]
+    jumlahMahasiswa = [145, 438, 186]
+    
+    # start process
+    fig, ax = plt.subplots(1, 2)
+
+    # bar process
+    ax[0].set_title
+    ax[0].set_xlabel
+    ax[0].set_ylabel
+
+    ax[0].plot()
