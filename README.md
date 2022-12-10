@@ -1,4 +1,4 @@
-# Repository Tugas Semester 1
+# Repository Rekap Semester 1
 Repository ini diperuntukkan bagi Mahasiswa UTY. dengan dibuatnya repos ini, diharapkan bisa menjadi
 pembelajaran dan evaluasi bagi Semua Mahasiswa UTY termasuk diri saya sendiri.
 
