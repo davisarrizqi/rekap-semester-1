@@ -24,10 +24,10 @@ Selanjutnya, anda bisa mengikuti langkah langkah yang telah disediakan oleh webs
 ## Melakukan Clone Pada Repository - Sample
 > General Repository
 ```
-git clone https://github.com/davisarrizqi/tugas-semester-1
+git clone https://github.com/davisarrizqi/rekap-semester-1
 ```
 ```
-cd tugas-semester-1
+cd rekap-semester-1
 ```
 ```
 tree
