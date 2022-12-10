@@ -35,7 +35,7 @@ tree
 
 > Maka Sistem Akan Menampilkan
 ```
-C:tugas-semester-1
+C:rekap-semester-1
 ├───library-matplotlib
 ├───library-numpy
 ├───library-pandas
